@@ -1,37 +1,34 @@
-# INVO Academy JS Starter with Vite
+# INVO Academy - Spotify FAQ section
 
-In order to see this file in preview mode in VS Code, press ```Ctrl + Shift + V```
+Projekt sekcji FAQ w serwisie Spotify.
 
-## Recommended IDE Setup
+## Opis
 
-- [VS Code](https://code.visualstudio.com/)
+Odwzorowanie designu z [pliku Figmy](https://www.figma.com/file/2TzmYvYUjfVXm5ORCQjYAc/Design?type=design&node-id=0%3A1&mode=design&t=X8klnDHIn7FD2y0s-1) oraz poprawne zaprogramowanie reguł RWD.
 
-## How to start your challenge
+## Demo
 
-This is a Universal Starter for all the Basic INVO Academy Challenges. In order to start your challenge, remove all the content inside ```<div id="home-page"></div>``` and start coding :) 
+Demo aplikacji dostępne [tutaj](https://grand-stardust-aa0c2a.netlify.app/).
 
-The main file structure is prepered, please make yourslef familiar with it. Your goal is to explore it and extend on your own while development. Feel free to remove all the extra files and code that you don't need.
+## Funkcjonalności
 
-## How to run your project
+- **RWD:** Projekt skaluje się odpowiednio na różnych urządzeniach, według wymiarów z Figmy.
+- **Animacja ikony:** Kiedy pytanie jest złożone, ikona jest wyświetlana jako minus, a gdy jest rozszerzone, ikona jest wyświetlana jako plus.
+- **Obserwowanie zmian rozmiaru elementu i aktualizowanie wartości:** Kalkulowanie rozmiaru elementu za każdym razem, gdy wysokość odpowiedzi zmienia się.
+- **Rozłożenie tylko jednego elementu:** Gdy użytkownik wybiera pytanie, tylko to pytanie powinno być widoczne, a wszystkie pozostałe powinny się złożyć.
 
-If you run your this project for the first time, you need to install npm dependencies by typing
+## Technologie
 
-```npm install``` (this is for the one-time installation only)
+- HTML
+- CSS
+- SASS
+- JS
 
-In order to run your project in a development mode type
+## Autor
 
-```npm run dev```
+- Oskar Rygasiewicz
+- INVO Academy (starter code)
 
-then open your browser and go to the url showed in the terminal. That's it, if you make any changes in the code, browser will synchronize automatically.
 
-## Building your project
-
-When you are ready to put your project on the Internet, you need to build it. For building, type
-
-```npm run build```
-
-This commend will create a dist folder. This is the folder containing your whole application and that's the only folder that you need to deploy to the server in order to make your app publically available.
-
-## More informations about folder structure and deploying your application you can find inside INVO Academy Knowledge Base
 
 

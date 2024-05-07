@@ -1,3 +1,121 @@
 .faq-question-partial {
-   
+    border: 1px solid var(--border-color);
+    border-radius: 24px;
+    padding: 24px 32px;
+    background-color: var(--background-color);
+    transition: 0.2s;
+
+    --icon-size: 13px;
+    --icon-thickness: 1px;
+
+    // ensure that every new question
+    // is 8px below the previous one
+    &:not(:first-of-type) {
+        margin-top: 8px;
+    }
+
+    // make our element interactive
+    // and UX friendly
+    &:hover {
+        cursor: pointer;
+        background-color: var(--background-color-primary-hover);
+        border-color: var(--primary-color);
+    }
+
+    & &__first-line {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    & &__title {
+        font-size: 18px;
+        line-height: 1.2em;
+        font-weight: 700;
+    }
+
+    & &__icon {
+        // to do for later
+        height: auto;
+    }
+
+    & &__answer {
+        // don't show the answer
+        // in our default state
+        // margin-top: 24px;
+        // display: none;
+        transition: 0.2s;
+        margin-top: 0;
+        height: 100%;
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+    }
+
+    & &__paragraph {
+        line-height: 1.6em;
+        letter-spacing: -0.01em;
+        font-size: 16px;
+        margin-block: 0;
+
+        // ensure that every new paragraph
+        // is 12px below the previous one
+        &:not(:first-of-type) {
+            margin-top: 12px;
+        }
+    }
+
+    &[data-question-expanded] {
+        // change the element colors
+        // for our xpanded state
+        background-color: var(--background-color-primary-hover);
+        border-color: var(--primary-color);
+
+        // show the answer
+        .faq-question-partial__answer {
+            // display: block;
+            margin-top: 24px;
+            max-height: var(--faq-answer-height);
+            overflow: visible;
+            opacity: 1;
+        }
+
+        .faq-question-partial__icon {
+            &:before {
+                transform: rotate(90deg);
+            }
+            &:after {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    & &__icon {
+        position: relative;
+        margin-left: 16px;
+        width: var(--icon-size);
+        height: var(--icon-size);
+        flex-shrink: 0;
+
+        &:before, &:after {
+            content: '';
+            position: absolute;
+            background-color: var(--primary-color);
+            transition: .2s;
+        }
+
+        &:before {
+            width: var(--icon-thickness);
+            margin-left: calc(((var(--icon-size) - var(--icon-thickness)) / 2));
+            height: 100%;
+        }
+
+        &:after {
+            height: var(--icon-thickness);
+            margin-top: calc(((var(--icon-size) - var(--icon-thickness)) / 2));
+            left: 0;
+            width: 100%;
+        }
+    }
+
 }
