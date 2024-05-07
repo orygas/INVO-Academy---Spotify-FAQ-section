@@ -8,7 +8,7 @@ Odwzorowanie designu z [pliku Figmy](https://www.figma.com/file/2TzmYvYUjfVXm5OR
 
 ## Demo
 
-Demo aplikacji dostępne [tutaj](https://grand-stardust-aa0c2a.netlify.app/).
+Demo aplikacji dostępne [tutaj](https://curious-meringue-8afeaa.netlify.app/).
 
 ## Funkcjonalności
 
